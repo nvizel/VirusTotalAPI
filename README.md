@@ -1,6 +1,7 @@
 # VirusTotalAPI
 This is my Virus Total API tool that scan many files from pcap or specific file and send it to Virus Total DB.  
-# VT.py - This is a simple tool, that send hash strings to Virus Total DB. 
+
+VT.py - This is a simple tool, that send hash strings to Virus Total DB. 
 
 # Information. 
 This Script made to help you investigate malicious traffic or specific file that maybe contain malware. 
@@ -15,52 +16,46 @@ FOREMOST need to be install - This script use FOREMOST the extarct the file from
 Python 2.7.X need to be install - This script base on python version 2.7.X 
 
 # Script Fllow:  
-- GUI Mode: ($ VT.py) 
- 1) Get pcap file path from user. 
- 2) Check if the file exist. 
- 3) For every pcap, the script take the first word on the last reposetory and named the pcap based on that word. 
+## GUI Mode: ($ VT.py) 
+- 1) Get pcap file path from user. 
+- 2) Check if the file exist. 
+- 3) For every pcap, the script take the first word on the last reposetory and named the pcap based on that word. 
     exampel: 
     the file '/tmp/pcaps/sespishes_pcap/pcap_name.pcap' will get the name 'pcap_name'.	  
- 4) Create output folder that contain all files that in the pcap.(OUTPUT_pcap_name). 
- 5) Using the program FOREMOST to extract all files from the pcap, and save them to the output folder that created. 
- 6) Asking the user with witch hash algorithm he like to hash the files. 
+- 4) Create output folder that contain all files that in the pcap.(OUTPUT_pcap_name). 
+- 5) Using the program FOREMOST to extract all files from the pcap, and save them to the output folder that created. 
+- 6) Asking the user with witch hash algorithm he like to hash the files. 
     The user can choce between all hash types that Virus Total support (sha1, sha224, sha256, sha512, md5 or use all). 
- 7) Greb all files that extract from the pcap to files list. 
- 8) Go one by one on the files list and hash them by the algorithm that user chosed. 
- 9) Greb the API-KEY that the user save in the 'API-KEY' file. 
-10) Send one by one all hashs to Virus Total DB. 
-11) Show progres. 
-12) Ask the user if he like to print out the result. 
-13) Ask the user if he like to save the result. 
-14) Ask the user if he like to save the reult as csv. 
-15) Close the script. 
+- 7) Greb all files that extract from the pcap to files list. 
+- 8) Go one by one on the files list and hash them by the algorithm that user chosed. 
+- 9) Greb the API-KEY that the user save in the 'API-KEY' file. 
+-10) Send one by one all hashs to Virus Total DB. 
+-11) Show progres. 
+-12) Ask the user if he like to print out the result. 
+-13) Ask the user if he like to save the result. 
+-14) Ask the user if he like to save the reult as csv. 
+-15) Close the script. 
 
-- Quick Mode: ($ VT.py -f <full path> -a <algorithm type>) 
- 1) Get the algorithm type user like to use from args -a. 
- 2) Check if the file exist. 
- 3) Get the file path user like to use from args -f. 
- 4) Hash the file. 
- 5) Greb the API-KEY that the user save in the 'API-KEY' file. 
- 6) Send the hash to Virus Total DB. 
- 7) Show progres. 
- 8) Ask the user if he like to print out the result. 
- 9) Ask the user if he like to save the result. 
-10) Ask the user if he like to save the reult as csv. 
-11) Close the script. 
-License: Do whatever you want with it ;)
+## Quick Mode: ($ VT.py -f <full path> -a <algorithm type>) 
+- 1) Get the algorithm type user like to use from args -a. 
+- 2) Check if the file exist. 
+- 3) Get the file path user like to use from args -f. 
+- 4) Hash the file. 
+- 5) Greb the API-KEY that the user save in the 'API-KEY' file. 
+- 6) Send the hash to Virus Total DB. 
+- 7) Show progres. 
+- 8) Ask the user if he like to print out the result. 
+- 9) Ask the user if he like to save the result. 
+-10) Ask the user if he like to save the reult as csv. 
+-11) Close the script. 
 
-Some examples:
+#License: #Do whatever you want with it ;)
 
-$ ./VT.py -h 
-Usage: -f <full path> -a <algorithm type> 
+#Some examples:
 
-Options: 
-  -h, --help            show this help message and exit 
-  -f FILE, --file=FILE  Use this full path FILE to hash 
-  -a ALGORITHM, --algorithm=ALGORITHM 
-                        Use sha1,sha224,sha256,sha512 or md5 
+-This is example for using GUI mode with pcap that contain PoisonIvy malware.
 
-
+<pre>
 
 $ ./VT.py 
 
@@ -268,7 +263,10 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 
 ########## DONE ##########
 
+</pre>
 
+- This exampel is for quick scan for one file and one hash type.
+<pre> 
 
 $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5 
 
@@ -387,3 +385,4 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 [*] Script run for:0:00:02.673763 
 
 ########## DONE ########## 
+</pre>
