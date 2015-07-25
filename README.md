@@ -1,7 +1,7 @@
 # VirusTotalAPI
 This is my Virus Total API tool that scan many files from pcap or specific file and send it to Virus Total DB.  
 
-VT.py - This is a simple tool, that send hash strings to Virus Total DB. 
+VT.py - is a simple tool, that send hash strings to Virus Total DB. 
 
 # Information. 
 This Script made to help you investigate malicious traffic or specific file that maybe contain malware. 
@@ -11,9 +11,9 @@ After the result back, the script will show you report with all relevant informa
 You will be able to save the report as txt file or csv. 
 
 # Dependencies. 
-Linux OS - This script work only on linux operation system. 
-FOREMOST need to be install - This script use FOREMOST the extarct the file from the pcap. 
-Python 2.7.X need to be install - This script base on python version 2.7.X 
+- Linux OS - This script work only on linux operation system. 
+- FOREMOST need to be install - This script use FOREMOST the extarct the file from the pcap. 
+- Python 2.7.X need to be install - This script base on python version 2.7.X 
 
 # Script Fllow:  
 ## GUI Mode: ($ VT.py) 
@@ -267,9 +267,7 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 
 - This exampel is for quick scan for one file and one hash type.
 <pre> 
-
-$ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5 
-
+$ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
          ____   ____  _________ 
         |_  _| |_  _||  _   _  | 
           \ \   / /  |_/ | | \_| 
@@ -282,7 +280,6 @@ $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
          nir.vizel2312@gmail.com 
           Created by Nir Vizel. 
  
-
         ############################## 
         #                            # 
         #    Welcome to quick mode   # 
@@ -290,20 +287,16 @@ $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
         #                            # 
         ############################## 
 
-
-### Sending HASH to Virus Total: [1/1] 
-### File: OUTPUT_case/exe/00000002.exe 
-### Type: md5 
-### Hash: f51144a3162c0a699743cd834a839ca0 
-
-
+ ### Sending HASH to Virus Total: [1/1] 
+ ### File: OUTPUT_case/exe/00000002.exe 
+ ### Type: md5 
+ ### Hash: f51144a3162c0a699743cd834a839ca0 
 
 ############################################# 
 
 HERE ARE THE RESULT FOR YOUR SCAN 
 
 ############################################# 
-
 
 ############## SCAN SUMMERY ################## 
 
@@ -316,7 +309,7 @@ Anti Virus detection:  49/55
 Script think its:      [['Generic', 'PoisonIvy', '78ABA64D']] 
 You use HASH:          md5:f51144a3162c0a699743cd834a839ca0 
 
-### Company Result ### 
+ ### Company Result ### 
 
 1) Bkav  :  None 
 2) MicroWorld-eScan  :  Generic.PoisonIvy.78ABA64D 
