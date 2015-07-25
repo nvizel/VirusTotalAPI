@@ -267,7 +267,9 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 
 - This exampel is for quick scan for one file and one hash type.
 <pre> 
-$ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
+
+$ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5 
+
          ____   ____  _________ 
         |_  _| |_  _||  _   _  | 
           \ \   / /  |_/ | | \_| 
@@ -280,6 +282,7 @@ $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
          nir.vizel2312@gmail.com 
           Created by Nir Vizel. 
  
+
         ############################## 
         #                            # 
         #    Welcome to quick mode   # 
@@ -287,16 +290,20 @@ $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5
         #                            # 
         ############################## 
 
+
  ### Sending HASH to Virus Total: [1/1] 
  ### File: OUTPUT_case/exe/00000002.exe 
  ### Type: md5 
  ### Hash: f51144a3162c0a699743cd834a839ca0 
+
+
 
 ############################################# 
 
 HERE ARE THE RESULT FOR YOUR SCAN 
 
 ############################################# 
+
 
 ############## SCAN SUMMERY ################## 
 
@@ -310,7 +317,6 @@ Script think its:      [['Generic', 'PoisonIvy', '78ABA64D']]
 You use HASH:          md5:f51144a3162c0a699743cd834a839ca0 
 
  ### Company Result ### 
-
 1) Bkav  :  None 
 2) MicroWorld-eScan  :  Generic.PoisonIvy.78ABA64D 
 3) nProtect  :  Generic.PoisonIvy.78ABA64D 
@@ -377,5 +383,6 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 
 [*] Script run for:0:00:02.673763 
 
-########## DONE ########## 
+########## DONE ##########
+
 </pre>
