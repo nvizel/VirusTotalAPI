@@ -267,7 +267,6 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 
 - This exampel is for quick scan for one file and one hash type.
 <pre> 
-
 $ ./VT.py -f OUTPUT_case/exe/00000002.exe -a md5 
 
          ____   ____  _________ 
