@@ -268,3 +268,9 @@ mkdir: cannot create directory ‘./RESULT’: File exists
 ########## DONE ##########
 
 </pre>
+
+# Improvements.
+- This script does not work with threads. On next version it will...
+- This script still show operation system error from shell command that I use. On next version it will not...
+- This script doesn't know how handle with all Virus Total Response codes, I need your help to get many as possible scenarios that contain response codes to improve the handling.
+- For more ideas, bugs,  questions, or just for fun, feel free to contact me on mail nir.vizel2312@gmail.com 
