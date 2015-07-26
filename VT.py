@@ -27,7 +27,7 @@ def getAPI_KEY(fileLocation="./API-KEY"):
         return api_key[0]
     except:
         print '''
-    Error:  its look like you give invalid API-KEY or that you edited the file API-KEY incorrect.
+    Error:  Its look like you give invalid API-KEY or that you edited the file API-KEY incorrect.
             Please re-edit the file.
 
             If you need any help, please contact me on E-mail: nir.vizel2312@gmail.com
