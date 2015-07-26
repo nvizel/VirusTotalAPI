@@ -23,7 +23,16 @@ def getAPI_KEY(fileLocation="./API-KEY"):
         pattern = r'API-KEY:(\w+)'
         api_key = re.findall(pattern, line)
     myFile.close()
-    return api_key[0]
+    try:
+        return api_key[0]
+    except:
+        print '''
+    Error:  its look like you give invalid API-KEY or that you edited the file API-KEY incorrect.
+            Please re-edit the file.
+
+            If you need any help, please contact me on E-mail: nir.vizel2312@gmail.com
+        '''
+        sys.exit(-1)
 
 # This function used to send the http request to https://www.virustotal.com/vtapi/v2/file/report.
 def send_To_VT(sha, apikey):
