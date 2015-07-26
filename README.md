@@ -32,12 +32,12 @@ You need to edit file API-KEY with your private or public key.
 - 7) Greb all files that extract from the pcap to files list. 
 - 8) Go one by one on the files list and hash them by the algorithm that user chosed. 
 - 9) Greb the API-KEY that the user save in the 'API-KEY' file. 
--10) Send one by one all hashs to Virus Total DB. 
--11) Show progres. 
--12) Ask the user if he like to print out the result. 
--13) Ask the user if he like to save the result. 
--14) Ask the user if he like to save the reult as csv. 
--15) Close the script. 
+- 10) Send one by one all hashs to Virus Total DB. 
+- 11) Show progres. 
+- 12) Ask the user if he like to print out the result. 
+- 13) Ask the user if he like to save the result. 
+- 14) Ask the user if he like to save the reult as csv. 
+- 15) Close the script. 
 
 ## Quick Mode: ($ VT.py -f <full path> -a <algorithm type>) 
 - 1) Get the algorithm type user like to use from args -a. 
@@ -49,10 +49,11 @@ You need to edit file API-KEY with your private or public key.
 - 7) Show progres. 
 - 8) Ask the user if he like to print out the result. 
 - 9) Ask the user if he like to save the result. 
--10) Ask the user if he like to save the reult as csv. 
--11) Close the script. 
+- 10) Ask the user if he like to save the reult as csv. 
+- 11) Close the script. 
 
-#License: #Do whatever you want with it ;)
+#License: 
+Do whatever you want with it ;)
 
 #Some examples:
 
